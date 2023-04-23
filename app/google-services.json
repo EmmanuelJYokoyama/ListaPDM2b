@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "779032556462",
+    "project_id": "pdmfirebase-176b0",
+    "storage_bucket": "pdmfirebase-176b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779032556462:android:22eec26a6762f6ab050e3f",
+        "android_client_info": {
+          "package_name": "com.example.manonaosei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779032556462-3p409uojdok67c5gb7e2gkokkjd8bj52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAyqbhgiCoXXxzUHIaiYPRLoRuvGiKkAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779032556462-3p409uojdok67c5gb7e2gkokkjd8bj52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
