@@ -41,22 +41,17 @@
                 android:text="redefinir"/>
 
             <Button
-                android:id="@+id/btn_Log"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/btn_Log"
                 android:text="login"/>
 
             <Button
-                android:id="@+id/btn_Del"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/btn_Del"
                 android:text="deletar"/>
 
-            <LinearLayout
-                android:id="@+id/linear2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"/>
         </LinearLayout>
     </ScrollView>
 

@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var email: EditText
     private lateinit var senha : EditText
     private lateinit var btn_reset: Button
-    private lateinit var btn_login : EditText
-    private lateinit var btn_delete : EditText
+    private lateinit var btn_login : Button
+    private lateinit var btn_delete : Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         btn_reset.setOnClickListener {
             var senha: String = senha.text.toString()
             val usuario = FirebaseAuth.getInstance().currentUser
-            usuario!!.updatePassword(senha).addOnCompleteListener{task ->
+            usuario?.updatePassword(senha)?.addOnCompleteListener{task ->
                 if(task.isSuccessful){
                     Toast.makeText(baseContext, "Password reseted sucessfully",Toast.LENGTH_LONG).show()
 
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
     fun deleteUser(){
         val usuario = FirebaseAuth.getInstance().currentUser
         btn_delete.setOnClickListener {
-            usuario!!.delete().addOnCompleteListener { task ->
+            usuario?.delete()?.addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(baseContext, "Delete Sucessful", Toast.LENGTH_LONG).show()
 
